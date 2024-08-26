@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .BG-main{
+        background-color: rgb(153, 208, 241);
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .BG-main h1{
+        border: 1px solid black;
+        background-color: rgb(92, 186, 229);
+        border-radius: 10px;
+    }
+    h1{
+        border: 1px solid black;
+        background-color: rgb(53, 163, 199);
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <div class="BG-main">
+    <h1>Jackson <br> <hr /> Electronics</h1>
+    <h2>Registration Form</h2>
+    <p>Register your Jackson Electronics product here</p>
+    <form action="" method="post">
+        <label  for="First Name" style="margin-right: 10px;">First Name:</label>
+        <input type="text" name="First Name" id="First Name" required>
+        <label for="Last Name" style="margin-right: 10px;">Last Name:</label>
+        <input type="text" name="Last Name" id="Last Name" required><br><br>
+        <label for="Address1" style="margin-right: 10px;">Address #1:</label>
+        <input type="text" name="Address1" id="Address1" required><br><br>
+        <label for="Address2" style="margin-right: 10px;">Address #2:</label>
+        <input type="text" name="Address2" id="Address2"><br><br>
+        <label for="City" style="margin-right: 10px;">City:</label>
+        <input type="text" name="City" id="City" required>
+        <label for="State" style="margin-right: 10px;">State:</label>
+        <input type="text" name="State" id="State" required>
+        <label for="Zip" style="margin-right: 10px;">Zip:</label>
+        <input type="text" name="Zip" id="Zip" required><br><br>
+        <label for="Country" style="margin-right: 10px;">Country:</label>
+        <input type="text" name="Country" id="Country" required><br><br>
+        <hr />
+        <label for="product" style="margin-right: 10px;">Product:</label>
+        <select id="product" name="product">
+            <option value="ScanMaster">ScanMaster</option>
+            </select><br><br>
+        <label for="datepurchared" style="margin-right: 10px;">Date Purchared:</label>
+        <input type="date" name="datepurchared" id="datepurchared" required><br><br>
+        <label for="serialNumber" style="margin-right: 10px;">Serial #:</label>
+        <input type="text" id="serialNumber" name="serialNumber" required><br><br>
+        <label style="margin-right: 10px;">Used for:</label>
+        <input type="radio" id="home" name="usedFor" value="Home">
+        <label for="home" style="margin-right: 10px;">Home</label>
+        <input type="radio" id="educationalInstitution" name="usedFor" value="Educational Institution">
+        <label for="educationalInstitution" style="margin-right: 10px;">Educational Institution</label>
+        <input type="radio" id="business" name="usedFor" value="Business">
+        <label for="business" style="margin-right: 10px;">Business</label>
+        <input type="radio" id="government" name="usedFor" value="Government">
+        <label for="government" style="margin-right: 10px;">Government</label>
+        <input type="radio" id="other" name="usedFor" value="Other">
+        <label for="other" style="margin-right: 10px;">Other</label><br><br>
+        <label style="margin-right: 10px;">System (check all that apply):</label>
+        <input type="checkbox" id="windows" name="system" value="Windows">
+        <label for="windows" style="margin-right: 10px;">Windows</label>
+        <input type="checkbox" id="unix" name="system" value="UNIX">
+        <label for="unix" style="margin-right: 10px;">UNIX</label>
+        <input type="checkbox" id="mac" name="system" value="Macintosh">
+        <label for="mac" style="margin-right: 10px;">Macintosh</label>
+        <input type="checkbox" id="otherSystem" name="system" value="Other">
+        <label for="otherSystem" style="margin-right: 10px;">Other</label><br><br>
+        <hr />
+        <label for="comments" style="margin-right: 10px;">Comments?:</label><br>
+        <textarea id="comments" name="comments"></textarea><br><br>
+
+        <input type="submit" value="Click to register">
+        <input type="reset" value="Click to cancel">
+    </form>
+    </div>
+    
+</body>
+</html>

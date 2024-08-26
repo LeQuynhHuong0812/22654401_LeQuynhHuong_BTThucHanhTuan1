@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> .BG-main{
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid rgb(74, 74, 74);
+    }
+    h1{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="BG-main">
+        <h1>Contact Us</h1>
+        <Fieldset>
+            <Legend>Your Message:</LEGEND>
+            To:
+            <input type="text" name="to" ><br>
+            Your email
+            <input type="email" name="Your email"><br>
+            <label for="comments">Comments?:</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+            <label for="attachment">Attach File:</label>
+            <input type="file" id="attachment" name="attachment"><br>
+        </Fieldset>
+        <Fieldset>
+            <Legend>How you found us:</LEGEND>
+            <label for="How did you hear of us">How did you hear of us</label><br>
+            <select id="How did you hear of us" name="How did you hear of us">
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+            </select><br>
+            <Label for="newsletter">Newsletter</Label>
+            <input type="checkbox" id="newsletter" name="newsletter" >Ensure this box is checked if you would like to receive email updates<br>
+        </Fieldset>
+        <input type="submit" value="Send message">
+    </div>
+    
+</body>
+</html>
